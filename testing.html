@@ -1,54 +1,32 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title></title>
-<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-<style type="text/css">
-.words{
-font-size:70px;
-color:blue;
-font-family:"VT323";
-}
-</style>
+<title>Donate</title>
+
 <script>
-var first = ["Curly", "Django", "Billy", "Smiley", "Blueridge", "Poppy", "Blackie", "Buckey", "Whitey", "Mojo", "Lefty", "Smokey", "Shorty", "Whiskey", "Bronco", "Trapper", "Amarillo", "Dakota", "Cactus", "Buck", "Brownie", "Pale Face", "Pat", "Paco", "Gonzales", "Bob"]
-var middle = ["The Lucky", "The Terrible", "The Fearsome", "The Hot-Tempered", "The Lone", "The Back-Stabbing", "The Cross-Eyed", "The Bad", "The One-Eyed", "The Ruthless", "The Wanted", "The Stubborn", "The Desperate", "The Mule-Headed", "The Happy", "The Crazy", "The Lawless", "The Saddlesore", "The Sharp-Eyed", "The Wild", "The Unruly", "The Paranoid", "The Angry", "The Blood-Thirsty", "The Rotten", "The Big"]
-var last = ["Gambler", "Apache", "Water trough driver", "Gunslinger", "Outlaw", "Bushwacker", "Bearcat", "Jailbreaker", "Itchy-Trigger", "Gold-Digger", "Stagecoach-Robber", "Sharpshooter", "Flapjack", "Gunslinger", "Buffalo Hunter", "Cotton-Mouth", "Deadwood", "Cowboy", "Sheriff", "Bull of the Woods", "Farmer", "Sundance Kid", "Rustler", "Rattlesnake", "Dude", "Mustang"]
-function four(){
-var one = document.getElementById("one").value
-var two = document.getElementById("two").value
-var three = document.getElementById("three").value
-var four = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-for(index=0;index<26;index++){
-if(four[index] == one){
-document.getElementById("five").innerHTML = first[index]
-}}
-for(index=0;index<26;index++){
-if(four[index] == two){
-document.getElementById("six").innerHTML = middle[index]
-}}
-for(index=0;index<26;index++){
-if(four[index] == three){
-document.getElementById("seven").innerHTML = last[index]
-}}
-document.getElementById("eight").innerHTML = "Your cowboy name is..."
+
+function email(){
+var email = "lizziesuber@gmail.com"
+var subject = "Suggestion"
+var body = document.getElementById("words").value
+GmailApp.sendEmail(email, subject, body)
+document.getElementById("thank").innerHTML = "Thank you for your suggestion!"
 }
 </script>
 </head>
+
 <body>
-<h1 style="color:brown;">WHAT IS YOUR COWBOY NAME?</h1>
 <form>
-<p>What is your first initial?</p>
+<p>Name:</p>
 <input type="text" id="one">
-<p>What is your middle initial? (if you don't have one, what's the last letter of your first name?)</p>
-<input type="text" id="two">
-<p>What is your last initial?</p>
-<input type="text" id="three">
-<input type="button" value="Submit" onclick="four()">
+
+<br/>
+
+<p>Your Suggestion:</p>
+<input type="text" id="words">
+<input type="button" value="Submit" onclick="email()">
 </form>
-<p id="eight"></p>
-<p id="five" class="words"></p>
-<p id="six" class="words"></p>
-<p id="seven" class="words"></p>
+<p id="thank"></p>
+  <p>Cowboy name</p>
 </body>
 </html>
+
