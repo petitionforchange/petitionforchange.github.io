@@ -4,7 +4,7 @@
 
 <script>
 function email(){
-var email = Session.getActiveUser().getEmail()
+var email = "lizziesuber@gmail.com"
 var subject = "Suggestion"
 var body = document.getElementById("words").value
 GmailApp.sendEmail(email, subject, body);
@@ -14,7 +14,7 @@ GmailApp.sendEmail(email, subject, body);
 
 <body>
 <form>
-<p>Email:</p>
+<p>Name:</p>
 <input type="text" id="one">
 
 <br/>
