@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>Donate</title>
+
+<script>
+function email(){
+var email = Session.getActiveUser().getEmail()
+var subject = "Suggestion"
+var body = document.getElementById("words").value
+GmailApp.sendEmail(email, subject, body);
+}
+</script>
+</head>
+
+<body>
+<form>
+<p>Email:</p>
+<input type="text" id="one">
+
+<br/>
+
+<p>Your Suggestion:</p>
+<input type="text" id="words">
+<input type="button" value="Submit" onclick="email()">
+</form>
+</body>
+</html>
