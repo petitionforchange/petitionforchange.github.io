@@ -7,7 +7,8 @@ function email(){
 var email = "lizziesuber@gmail.com"
 var subject = "Suggestion"
 var body = document.getElementById("words").value
-GmailApp.sendEmail(email, subject, body);
+GmailApp.sendEmail(email, subject, body)
+document.getElementById("thank").innerHTML = "Thank you for your suggestion!"
 }
 </script>
 </head>
@@ -23,5 +24,6 @@ GmailApp.sendEmail(email, subject, body);
 <input type="text" id="words">
 <input type="button" value="Submit" onclick="email()">
 </form>
+<p id="thank"></p>
 </body>
 </html>
