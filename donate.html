@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <head>
 <title>Donate</title>
-
-<script>
-function email(){
-var email = "lizziesuber@gmail.com"
-var subject = "Suggestion"
-var body = document.getElementById("words").value
-GmailApp.sendEmail(email, subject, body)
-document.getElementById("thank").innerHTML = "Thank you for your suggestion!"
+  
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+  
+<style type="text/css">
+h2{
+font-family: 'Raleway', sans-serif;
 }
-</script>
+
+p{
+color:#29083E;
+font-family: 'Comfortaa', cursive;
+}
+
+.one{
+font-size:12px;
+}
+</style>
 </head>
 
 <body>
-<form>
-<p>Name:</p>
-<input type="text" id="one">
+<a id="top"></a>
+  
+<a href="index.html" class="one">Petitions</a>
+<h2><a href="https://helplebanon.carrd.co/#donate" target="_blank">Lebanon</a></h2>
+<p>Lebanon's capital, Beirut, recently experience a massive explosion. The nation relied heavily on that city for revenue and was already experiencing a financial crisis. Many people were killed or injured in the explosion and are in need of medical attention.</p>
+  
+<br/>
+
+<h2><a href="https://secure.actblue.com/donate/ms_blm_homepage_2019" target="_blank">Black Lives Matter</a></h2>
+<p>Black Lives Matter is an organization that strives to "eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes".</p>
 
 <br/>
 
-<p>Your Suggestion:</p>
-<input type="text" id="words">
-<input type="button" value="Submit" onclick="email()">
-</form>
-<p id="thank"></p>
+<h2><a href="https://store.usps.com/store/results/gifts/_/N-nnxamr#content" target="_blank">USPS Merch</a></h2>
+<p>You can help the USPS financially by buying some of their merch, or through actions such as sending letters or packages to your friends or family members.</p>
+ 
+<br/>
+
+<p><a href="#top">Top of Page</a></p>
 </body>
 </html>
