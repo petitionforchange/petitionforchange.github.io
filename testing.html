@@ -2,8 +2,21 @@
 <head>
 <title>Tests</title>
 
-<script>
+<style>
+div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
 
+.hope {
+  display: inline-block;
+  cursor: pointer;
+}
+</style>
+  
+<script>
 function email(){
 var email = "lizziesuber@gmail.com"
 var subject = "Suggestion"
@@ -15,6 +28,20 @@ document.getElementById("thank").innerHTML = "Thank you for your suggestion!"
 </head>
 
 <body>
+<div class="hope" onclick="menu">
+<div></div>
+<div></div>
+<div></div>
+<div>
+<p id="five"></p>
+  
+<script>
+function menu(){
+document.getElementById("five").innerHTML = "<p>other actions for change: <a href="index.html" class="one">petition</a> | <a href="vote.html" class="one">vote</a></p>"
+}
+  
+  
+</script>
   <p>This place is for testing things out</p>
 <form>
 <p>Name:</p>
