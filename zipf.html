@@ -3,14 +3,29 @@
 <title>Zipf's Law</title>
 </head>
 <body>
+  
+<form>
+<p>Enter your sentence(s).</p>
+<input type="text" id="two">
+
+<p>What word do you want to search for?</p>
+<input type="text" id="two">
+<input type="button" value="Submit" onclick="word()">
+  
+</form>
+  
 <script>
 var one = prompt("Enter your sentence(s).")
 
 var search = true
-while(search){
-var three = prompt("Which word would you like to look for?")
 
+var three = prompt("Which word would you like to look for?")
+var four = str.search(three)
+var five = 0
+if four > 0{
+five+=1
 }
+
 </script>
 
 <p id="two"></p>
