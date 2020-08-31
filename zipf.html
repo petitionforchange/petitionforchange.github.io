@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <head>
 <title>Zipf's Law</title>
-
+<script>
+var three
+var seven
+var four
+var five
+ 
+function word(){
+document.getElementById("eight").innerHTML = "finally"
+three = document.getElementById("one").value
+seven = document.getElementById("two").value
+four = three.search(seven)
+five = 0
+if four > 0{
+five+=1
+}
+document.getElementById("six").innerHTML = "hello"
+}
+</script>
 </head>
 <body>
   
@@ -15,26 +32,8 @@
   
 </form>
   
-<script>
-var three
-var seven
-var four
-var five
- 
-function word(){
-three = document.getElementById("one").value
-seven = document.getElementById("two").value
-four = three.search(seven)
-five = 0
-if four > 0{
-five+=1
-}
-document.getElementById("six").innerHTML = five
-}
-
-</script>
-  
 <p id="six"></p>
-<p>q</p>
+<p id="eight"></p>
+<p>r</p>
 </body>
 </html>
