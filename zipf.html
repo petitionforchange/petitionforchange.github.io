@@ -40,8 +40,12 @@ var three = document.getElementById("one").value
 var seven = document.getElementById("two").value
 var four = three.search(seven)
 var five = 0
-document.getElementById("eight").innerHTML = four
+if (four > 0){
+document.getElementById("eight").innerHTML = five
 }
+if (four < 0){
+document.getElementById("eight").innerHTML = seven + " is not in " + three
+}}
 </script>
 </body>
 </html>
