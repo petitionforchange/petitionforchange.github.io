@@ -7,7 +7,7 @@ var seven
 var four
 var five
  
-function word(){
+function words(){
 document.getElementById("eight").innerHTML = "finally"
 three = document.getElementById("one").value
 seven = document.getElementById("two").value
@@ -18,6 +18,7 @@ five+=1
 }
 document.getElementById("six").innerHTML = "hello"
 }
+ 
 </script>
 </head>
 <body>
@@ -28,12 +29,17 @@ document.getElementById("six").innerHTML = "hello"
 
 <p>What word do you want to search for?</p>
 <input type="text" id="two">
-<input type="button" value="Submit" onclick="word()">
-  
+<input type="button" value="Submit" onclick="words()">
+<input type="button" value="Submit" onclick="four()">
 </form>
-  
+ 
 <p id="six"></p>
 <p id="eight"></p>
-<p>r</p>
+<p>m/p>
+ 
+<script>
+function four(){
+document.write("is this showing up?")
+}
 </body>
 </html>
