@@ -2,10 +2,7 @@
 <head>
 <title>Zipf's Law</title>
 <script>
-var three
-var seven
-var four
-var five
+
  
 function words(){
 document.getElementById("eight").innerHTML = "finally"
@@ -29,7 +26,6 @@ document.getElementById("six").innerHTML = "hello"
 
 <p>What word do you want to search for?</p>
 <input type="text" id="two">
-<input type="button" value="Submit" onclick="words()">
 <input type="button" value="Submit" onclick="four()">
 </form>
  
@@ -40,6 +36,11 @@ document.getElementById("six").innerHTML = "hello"
 <script>
 function four(){
 document.getElementById("six").innerHTML = "is this showing up?"
+var three = document.getElementById("one").value
+var seven = document.getElementById("two").value
+var four = three.search(seven)
+var five = 0
+document.getElementById("eight").innerHTML = four
 }
 </script>
 </body>
