@@ -7,31 +7,34 @@
   
 <form>
 <p>Enter your sentence(s).</p>
-<input type="text" name="one">
+<input type="text" id="one">
 
 <p>What word do you want to search for?</p>
-<input type="text" name="two">
+<input type="text" id="two">
 <input type="button" value="Submit" onclick="word()">
   
 </form>
   
 <script>
-var three = document.getElementById("one")
-var seven = document.getElementById("two")
-var four = three.search(seven)
-var five = 0
+var three
+var seven
+var four
+var five
  
 function word(){
+three = document.getElementById("one").value
+seven = document.getElementById("two").value
+four = three.search(seven)
+five = 0
 if four > 0{
 five+=1
 }
-document.getElementById("six").innerHTML = "hello"
-  
+document.getElementById("six").innerHTML = five
 }
 
 </script>
   
 <p id="six"></p>
-<p>m</p>
+<p>q</p>
 </body>
 </html>
