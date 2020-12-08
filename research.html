@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>repl.it</title>
+<title>Politicians and the News</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -20,8 +20,9 @@ var four = fourp.link("https://forms.gle/efKXqVRjdwAFAz3B8")
 var five = Math.floor(Math.random() *4) + 1;
 var actual = five
 document.write(five)
+  
 if (actual == 1){
-document.write(one)
+document.getElementById("six").innerHTML = "Please type a 1 in this box."
 }
 if (actual == 2){
 document.write(two)
@@ -32,6 +33,35 @@ document.write(three)
 if (actual == 4){
 document.write(four)
 }
+  
+function link(){
+var eight = document.getElementById("seven").value
+
+if (actual == 1){
+if (eight == 1){
+if (typeof(Storage) !== "undefined"){
+localStorage.setItem(actual, eight)
+document.getElementById("nine").innerHTML = "Thanks! Here's the link to the survey: " + one
+}
+if (eight ==! 1){
+document.getElementById("nine").innerHTML = "You didn't type in 1. Try again."
+}
+if (actual == 2){
+document.write(two)
+}
+if (actual == 3){
+document.write(three)
+}
+if (actual == 4){
+document.write(four)
+}}
 </script>
+  
+<form>
+<p id="six"></p>
+<input type="number" id="seven">
+<input type="button" value="Submit" onclick="link()">
+<p id="nine"></p>
+</form>
 </body>
 </html>
